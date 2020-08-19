@@ -1,0 +1,28 @@
+openapi: "3.0.0"
+info:
+    description: Reddit.com API
+    version: 1.0.0
+    title: Reddit.com
+    termsOfService: https://ssl.reddit.com/dev/api
+servers:
+    -
+        url: https://oauth.reddit.com
+        description: Reddit.com API
+components:
+    securitySchemes:
+        oauth2:
+            type: oauth2
+            flows:
+                authorizationCode:
+                    authorizationUrl: /authorize
+                    tokenUrl: /access_token
+                    scopes:
+                        creddits: Spend my reddit gold creddits on giving gold to other users.
+                        modcontributors: Add/remove users to approved user lists and ban/unban or mute/unmute users from subreddits I moderate.
+    schemas:
+        Me: {$ref: ./schemas/Me.yaml}
+paths:
+    /me:
+        $ref: ./paths/me.yaml
+    /user/{username}/saved:
+        $ref: ./paths/saved.yaml

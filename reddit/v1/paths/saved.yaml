@@ -1,0 +1,33 @@
+get:
+    summary: Get user saved things
+    operationId: getSaved
+    tags:
+        - user
+    parameters:
+        -
+            in: path
+            name: username
+            schema:
+                type: string
+            required: true
+        -
+            in: query
+            name: limit
+            schema:
+                type: integer
+                minimum: 0
+                maximum: 100
+            required: false
+            default: 25
+    security:
+        -
+            oauth2: []
+    responses:
+        '200':
+            content:
+                application/json:
+                    schema:
+                        $ref: "../schemas/Me.yaml"
+        default:
+            description: foo
+

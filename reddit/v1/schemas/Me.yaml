@@ -1,0 +1,11 @@
+type: object
+required:
+    - id
+    - name
+properties:
+    id:
+        type: string
+        example: 21i3v9
+    name:
+        type: string
+        example: snoo

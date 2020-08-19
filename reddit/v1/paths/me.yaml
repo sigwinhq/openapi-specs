@@ -1,0 +1,20 @@
+get:
+    servers:
+        -
+            url: https://oauth.reddit.com/api/v1
+    summary: Returns the identity of the user.
+    operationId: me
+    tags:
+        - user
+    security:
+        -
+            oauth2: []
+    responses:
+        '200':
+            content:
+                application/json:
+                    schema:
+                        $ref: "../schemas/Me.yaml"
+        default:
+            description: foo
+
