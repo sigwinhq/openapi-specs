@@ -7,6 +7,7 @@ get:
         -
             in: path
             name: username
+            example: snoo
             schema:
                 type: string
             required: true
@@ -27,7 +28,5 @@ get:
             content:
                 application/json:
                     schema:
-                        $ref: "../schemas/Me.yaml"
-        default:
+                        $ref: "../schemas/Listing.yaml"
             description: foo
-

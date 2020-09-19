@@ -16,11 +16,7 @@ components:
                 authorizationCode:
                     authorizationUrl: /authorize
                     tokenUrl: /access_token
-                    scopes:
-                        creddits: Spend my reddit gold creddits on giving gold to other users.
-                        modcontributors: Add/remove users to approved user lists and ban/unban or mute/unmute users from subreddits I moderate.
-    schemas:
-        Me: {$ref: ./schemas/Me.yaml}
+                    scopes: {}
 paths:
     /me:
         $ref: ./paths/me.yaml

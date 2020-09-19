@@ -15,6 +15,4 @@ get:
                 application/json:
                     schema:
                         $ref: "../schemas/Me.yaml"
-        default:
             description: foo
-

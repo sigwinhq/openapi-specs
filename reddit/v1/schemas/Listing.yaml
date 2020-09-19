@@ -1,0 +1,30 @@
+type: object
+required:
+    - kind
+    - data
+properties:
+    kind:
+        type: string
+    data:
+        type: object
+        required:
+            - modhash
+            - dist
+            - children
+            - after
+            - before
+        properties:
+            modhash:
+                type: string
+            dist:
+                type: integer
+            children:
+                type: array
+                items:
+                    type: object
+            after:
+                type: string
+            before:
+                type: string
+        additionalProperties: false
+additionalProperties: false
