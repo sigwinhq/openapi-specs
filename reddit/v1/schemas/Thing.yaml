@@ -1,0 +1,41 @@
+type: object
+required:
+    - id
+    - name
+    - permalink
+    - subreddit
+    - subreddit_id
+    - subreddit_type
+    - author
+    - author_fullname
+properties:
+    id:
+        type: string
+    name:
+        type: string
+    permalink:
+        type: string
+    post_hint:
+        type: string
+        enum: ["self", "link", "image", "hosted:video", "rich:video"]
+    created_utc:
+        type: integer
+        format: int64
+    subreddit:
+        type: string
+    subreddit_id:
+        type: string
+    subreddit_type:
+        type: string
+    author:
+        type: string
+    author_fullname:
+        type: string
+    title:
+        type: string
+    url:
+        type: string
+    url_overridden_by_dest:
+        type: string
+    body:
+        type: string

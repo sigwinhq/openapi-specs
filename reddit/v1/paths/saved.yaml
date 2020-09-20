@@ -13,13 +13,25 @@ get:
             required: true
         -
             in: query
+            name: after
+            schema:
+                type: string
+            required: false
+        -
+            in: query
+            name: before
+            schema:
+                type: string
+            required: false
+        -
+            in: query
             name: limit
             schema:
                 type: integer
+                default: 25
                 minimum: 0
                 maximum: 100
             required: false
-            default: 25
     security:
         -
             oauth2: []

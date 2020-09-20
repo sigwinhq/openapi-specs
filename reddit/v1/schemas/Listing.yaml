@@ -11,8 +11,6 @@ properties:
             - modhash
             - dist
             - children
-            - after
-            - before
         properties:
             modhash:
                 type: string
@@ -22,6 +20,11 @@ properties:
                 type: array
                 items:
                     type: object
+                    properties:
+                        kind:
+                            type: string
+                        data:
+                            $ref: "Thing.yaml"
             after:
                 type: string
             before:
