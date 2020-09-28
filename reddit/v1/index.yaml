@@ -1,9 +1,16 @@
 openapi: "3.0.0"
 info:
-    description: Reddit.com API
     version: 1.0.0
     title: Reddit.com
-    termsOfService: https://ssl.reddit.com/dev/api
+    description: Reddit.com API
+    termsOfService: https://www.reddit.com/wiki/api-terms
+    contact:
+        name: Reddit API Access
+        url: https://ssl.reddit.com/dev/api
+        email: api@reddit.com
+    license:
+        name: MIT
+        url: https://opensource.org/licenses/MIT
 servers:
     -
         url: https://oauth.reddit.com
