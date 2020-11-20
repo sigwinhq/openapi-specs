@@ -7,7 +7,6 @@ required:
     - subreddit_id
     - subreddit_type
     - author
-    - author_fullname
 properties:
     id:
         type: string

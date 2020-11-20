@@ -1,3 +1,4 @@
+title: ListingEnvelope
 type: object
 required:
     - kind
@@ -5,7 +6,9 @@ required:
 properties:
     kind:
         type: string
+        enum: [ "listing" ]
     data:
+        title: Listing
         type: object
         required:
             - modhash
@@ -19,12 +22,14 @@ properties:
             children:
                 type: array
                 items:
+                    title: Thing
                     type: object
                     properties:
                         kind:
                             type: string
+                            enum: [ "t1" ]
                         data:
-                            $ref: "Thing.yaml"
+                            $ref: "ThingData.yaml"
             after:
                 type: string
             before:

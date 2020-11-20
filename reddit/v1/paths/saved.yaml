@@ -40,5 +40,5 @@ get:
             content:
                 application/json:
                     schema:
-                        $ref: "../schemas/Listing.yaml"
+                        $ref: "../schemas/ListingEnvelope.yaml"
             description: foo
