@@ -6,7 +6,7 @@ required:
 properties:
     kind:
         type: string
-        enum: [ "listing" ]
+        enum: [ "Listing" ]
     data:
         title: Listing
         type: object
@@ -27,7 +27,7 @@ properties:
                     properties:
                         kind:
                             type: string
-                            enum: [ "t1" ]
+                            enum: [ "t1", "t3" ]
                         data:
                             $ref: "ThingData.yaml"
             after:
