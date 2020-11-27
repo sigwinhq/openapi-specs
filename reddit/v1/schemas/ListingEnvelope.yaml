@@ -24,6 +24,9 @@ properties:
                 items:
                     title: Thing
                     type: object
+                    required:
+                        - kind
+                        - data
                     properties:
                         kind:
                             type: string
