@@ -36,5 +36,13 @@ properties:
         type: string
     url_overridden_by_dest:
         type: string
+    link_id:
+        type: string
+    link_author:
+        type: string
+    link_title:
+        type: string
+    link_permalink:
+        type: string
     body:
         type: string
