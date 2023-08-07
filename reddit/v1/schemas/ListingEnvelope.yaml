@@ -30,7 +30,7 @@ properties:
                     properties:
                         kind:
                             type: string
-                            enum: [ "t1", "t3" ]
+                            enum: [ "t1", "t3", "more" ]
                         data:
                             $ref: "ThingData.yaml"
             after:
