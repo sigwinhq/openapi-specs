@@ -46,3 +46,13 @@ properties:
         type: string
     body:
         type: string
+    is_gallery:
+        type: boolean
+    is_meta:
+        type: boolean
+    is_self:
+        type: boolean
+    is_video:
+        type: boolean
+    selftext:
+        type: string
