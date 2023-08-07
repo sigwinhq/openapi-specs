@@ -25,7 +25,7 @@ components:
                     tokenUrl: /access_token
                     scopes: {}
 paths:
-    /me:
+    /api/me:
         $ref: ./paths/me.yaml
     /user/{username}/saved:
         $ref: ./paths/saved.yaml

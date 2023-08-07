@@ -1,7 +1,4 @@
 get:
-    servers:
-        -
-            url: https://oauth.reddit.com/api/v1
     summary: Returns the identity of the user.
     operationId: me
     tags:
