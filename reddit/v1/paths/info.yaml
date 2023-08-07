@@ -1,0 +1,23 @@
+get:
+    summary: Get thing info
+    operationId: getInfo
+    tags:
+        - thing
+    parameters:
+        -
+            in: query
+            name: id
+            example: t3_11e9mr5
+            schema:
+                type: string
+            required: true
+    security:
+        -
+            oauth2: []
+    responses:
+        '200':
+            content:
+                application/json:
+                    schema:
+                        $ref: "../schemas/ListingEnvelope.yaml"
+            description: foo

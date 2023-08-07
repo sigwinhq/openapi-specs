@@ -27,5 +27,7 @@ components:
 paths:
     /api/me:
         $ref: ./paths/me.yaml
+    /api/info:
+        $ref: ./paths/info.yaml
     /user/{username}/saved:
         $ref: ./paths/saved.yaml
