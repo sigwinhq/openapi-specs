@@ -1,4 +1,4 @@
-title: Me
+title: UserData
 type: object
 required:
     - id

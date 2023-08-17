@@ -1,5 +1,5 @@
 get:
-    summary: Returns the identity of the user.
+    summary: Returns the identity of the current user.
     operationId: me
     tags:
         - user
@@ -11,5 +11,4 @@ get:
             content:
                 application/json:
                     schema:
-                        $ref: "../schemas/Me.yaml"
-            description: foo
+                        $ref: "../schemas/UserData.yaml"

@@ -1,6 +1,6 @@
 openapi: "3.0.0"
 info:
-    version: 1.2.0
+    version: 1.1.0
     title: Reddit.com
     description: Reddit.com API
     termsOfService: https://www.reddit.com/wiki/api-terms
@@ -29,5 +29,7 @@ paths:
         $ref: ./paths/me.yaml
     /api/info:
         $ref: ./paths/info.yaml
+    /user/{username}/about:
+        $ref: ./paths/about.yaml
     /user/{username}/saved:
         $ref: ./paths/saved.yaml

@@ -1,0 +1,22 @@
+get:
+    summary: Returns the identity of a user.
+    operationId: getAbout
+    tags:
+        - user
+    parameters:
+        -
+            in: path
+            name: username
+            example: snoo
+            schema:
+                type: string
+            required: true
+    security:
+        -
+            oauth2: []
+    responses:
+        '200':
+            content:
+                application/json:
+                    schema:
+                        $ref: "../schemas/User.yaml"

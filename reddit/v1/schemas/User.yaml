@@ -1,0 +1,12 @@
+title: User
+type: object
+required:
+    - kind
+    - data
+properties:
+    kind:
+        type: string
+        enum: [ "t2" ]
+    data:
+        $ref: "UserData.yaml"
+additionalProperties: false

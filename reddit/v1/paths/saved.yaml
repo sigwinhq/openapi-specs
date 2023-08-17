@@ -41,4 +41,3 @@ get:
                 application/json:
                     schema:
                         $ref: "../schemas/ListingEnvelope.yaml"
-            description: foo
