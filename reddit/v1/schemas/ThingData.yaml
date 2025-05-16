@@ -16,7 +16,7 @@ properties:
         type: string
     post_hint:
         type: string
-        enum: ["self", "link", "image", "hosted:video", "rich:video"]
+        enum: ["self", "link", "image", "hosted:video", "rich:video", "gallery"]
     created_utc:
         type: integer
         format: int64
